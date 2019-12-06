@@ -5,9 +5,10 @@ export function Player(props) {
     player: { name, country }
   } = props;
   return (
-    <div>
-      <h3>{name}</h3>
-      <h3>{country}</h3>
+    <div className="Player">
+      <h3 data-testid="name">{name}</h3>
+      <pre> - </pre>
+      <h3 data-testid="country">{country}</h3>
     </div>
   );
 }
